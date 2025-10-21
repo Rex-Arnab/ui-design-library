@@ -34,7 +34,9 @@ const isGAAvailable = (): boolean => {
 export const trackPageView = (url: string) => {
   if (!isGAAvailable()) return;
 
-  window.gtag?.("config", process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!, {
+  const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-TP5JDG34QV";
+
+  window.gtag?.("config", GA_ID! , {
     page_path: url,
   });
 };

@@ -13,7 +13,7 @@ import Script from "next/script";
  * - GA4 property created in Google Analytics
  */
 export function GoogleAnalytics() {
-  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-TP5JDG34QV";
 
   // Don't load GA in development or if measurement ID is not set
   if (!measurementId || process.env.NODE_ENV !== "production") {
