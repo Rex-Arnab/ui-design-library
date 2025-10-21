@@ -147,7 +147,7 @@ export function PortfolioHero({ className = "" }: PortfolioHeroProps) {
             >
               <span className="text-sm text-gray-600 dark:text-gray-400">Follow me:</span>
               {[
-                { icon: Github, href: "#" },
+                { icon: Github, href: "https://github.com/Rex-Arnab/ui-design-library" },
                 { icon: Linkedin, href: "#" },
                 { icon: Palette, href: "#" }
               ].map((social, index) => (

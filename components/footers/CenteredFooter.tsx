@@ -28,7 +28,7 @@ const CenteredFooter: React.FC<CenteredFooterProps> = ({ className = '' }) => {
     { Icon: Facebook, href: '#', label: 'Facebook' },
     { Icon: Twitter, href: '#', label: 'Twitter' },
     { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { Icon: Github, href: '#', label: 'GitHub' },
+    { Icon: Github, href: 'https://github.com/Rex-Arnab/ui-design-library', label: 'GitHub' },
     { Icon: Instagram, href: '#', label: 'Instagram' },
     { Icon: Youtube, href: '#', label: 'YouTube' },
   ];

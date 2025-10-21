@@ -127,10 +127,10 @@ export default function Home() {
           </Link>
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com"
+              href="https://github.com/Rex-Arnab/ui-design-library"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackExternalLink("https://github.com", "GitHub - Header")}
+              onClick={() => trackExternalLink("https://github.com/Rex-Arnab/ui-design-library", "GitHub - Header")}
               className="bg-white text-black px-6 py-2.5 font-bold border-2 border-white hover:bg-black hover:text-white transition-all duration-200 flex items-center gap-2 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
             >
               <Github className="h-4 w-4" />
@@ -251,12 +251,12 @@ export default function Home() {
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <a
-              href="https://github.com"
+              href="https://github.com/Rex-Arnab/ui-design-library"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {
                 trackHeroCtaClick("secondary");
-                trackExternalLink("https://github.com", "GitHub - Hero");
+                trackExternalLink("https://github.com/Rex-Arnab/ui-design-library", "GitHub - Hero");
               }}
               className="bg-transparent text-white px-8 py-5 text-lg font-black border-4 border-white hover:bg-white hover:text-black transition-all duration-200 flex items-center gap-3"
             >

@@ -46,7 +46,7 @@ const defaultMembers: TeamMember[] = [
     location: 'Seattle, WA',
     social: {
       linkedin: 'https://linkedin.com',
-      github: 'https://github.com',
+      github: 'https://github.com/Rex-Arnab/ui-design-library',
       twitter: 'https://twitter.com',
     },
   },
@@ -80,7 +80,7 @@ const defaultMembers: TeamMember[] = [
     location: 'Chicago, IL',
     social: {
       linkedin: 'https://linkedin.com',
-      github: 'https://github.com',
+      github: 'https://github.com/Rex-Arnab/ui-design-library',
     },
   },
   {
@@ -113,7 +113,7 @@ const defaultMembers: TeamMember[] = [
     location: 'Toronto, ON',
     social: {
       linkedin: 'https://linkedin.com',
-      github: 'https://github.com',
+      github: 'https://github.com/Rex-Arnab/ui-design-library',
     },
   },
 ];

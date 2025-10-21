@@ -32,7 +32,7 @@ export default function SplitNavbar({
   const [activeLink, setActiveLink] = useState('#work');
 
   const socialLinks = [
-    { icon: Github, href: '#github', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/Rex-Arnab/ui-design-library', label: 'GitHub' },
     { icon: Twitter, href: '#twitter', label: 'Twitter' },
     { icon: Linkedin, href: '#linkedin', label: 'LinkedIn' },
   ];

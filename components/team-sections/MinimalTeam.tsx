@@ -44,7 +44,7 @@ const defaultMembers: TeamMember[] = [
     bio: 'Architecting scalable systems and infrastructure',
     social: {
       linkedin: 'https://linkedin.com',
-      github: 'https://github.com',
+      github: 'https://github.com/Rex-Arnab/ui-design-library',
       email: 'mailto:liam@company.com',
     },
   },
@@ -96,7 +96,7 @@ const defaultMembers: TeamMember[] = [
     bio: 'Building high-performing engineering teams',
     social: {
       linkedin: 'https://linkedin.com',
-      github: 'https://github.com',
+      github: 'https://github.com/Rex-Arnab/ui-design-library',
     },
   },
   {
