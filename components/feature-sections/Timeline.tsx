@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle, Circle, type LucideIcon } from "lucide-react";
 
+import { CheckCircle, Circle } from "lucide-react";
 interface TimelineStep {
   number: string;
   title: string;

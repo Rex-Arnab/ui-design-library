@@ -52,7 +52,7 @@ export function SingleMessageHero({ className = "" }: SingleMessageHeroProps) {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "easeOut" as const }}
             className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight"
           >
             <span className="text-gray-900 dark:text-white">
@@ -68,7 +68,7 @@ export function SingleMessageHero({ className = "" }: SingleMessageHeroProps) {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 1, delay: 0.2, ease: "easeOut" as const }}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
           >
             The complete platform for building modern web applications with speed, security, and scale.
@@ -78,7 +78,7 @@ export function SingleMessageHero({ className = "" }: SingleMessageHeroProps) {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+            transition={{ duration: 1, delay: 0.4, ease: "easeOut" as const }}
             className="pt-8"
           >
             <button className="group relative px-10 py-5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-semibold text-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden">
@@ -97,7 +97,7 @@ export function SingleMessageHero({ className = "" }: SingleMessageHeroProps) {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+            transition={{ duration: 1, delay: 0.6, ease: "easeOut" as const }}
             className="pt-12"
           >
             <p className="text-sm text-gray-500 dark:text-gray-500">

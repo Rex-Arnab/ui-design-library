@@ -92,7 +92,7 @@ const MiniChart: React.FC<{
           transition={{
             delay: index * 0.05,
             duration: 0.5,
-            ease: 'easeOut',
+            ease: 'easeOut' as const,
           }}
           whileHover={{ opacity: 0.8 }}
           onMouseEnter={() => onHover(index)}
@@ -124,7 +124,7 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: 'easeOut',
+      ease: 'easeOut' as const,
     },
   },
 };

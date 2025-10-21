@@ -11,7 +11,7 @@ declare global {
     gtag?: (
       command: string,
       targetId: string,
-      config?: Record<string, any>
+      config?: Record<string, unknown>
     ) => void;
   }
 }
@@ -44,7 +44,7 @@ export const trackPageView = (url: string) => {
  */
 export const trackEvent = (
   eventName: string,
-  eventParams?: Record<string, any>
+  eventParams?: Record<string, unknown>
 ) => {
   if (!isGAAvailable()) return;
 

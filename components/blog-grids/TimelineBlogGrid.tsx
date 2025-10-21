@@ -167,7 +167,7 @@ const TimelineBlogGrid: React.FC<TimelineBlogGridProps> = ({
           <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-800 hidden md:block" />
 
           {/* Posts grouped by month */}
-          {Object.entries(groupedPosts).map(([month, monthPosts], monthIndex) => (
+          {Object.entries(groupedPosts).map(([month, monthPosts]) => (
             <div key={month} className="mb-12 last:mb-0">
               {/* Month Label */}
               <div className="mb-8 relative">

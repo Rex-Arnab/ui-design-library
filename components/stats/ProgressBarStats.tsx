@@ -120,7 +120,7 @@ export default function ProgressBarStats({
                       className={`h-full ${stat.color} rounded-full`}
                       initial={{ width: 0 }}
                       animate={{ width: `${percentage}%` }}
-                      transition={{ duration: 1.5, ease: 'easeOut', delay: index * 0.1 }}
+                      transition={{ duration: 1.5, ease: 'easeOut' as const, delay: index * 0.1 }}
                     />
                   </div>
                 </div>

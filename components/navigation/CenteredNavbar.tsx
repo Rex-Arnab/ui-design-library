@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 interface NavLink {
   label: string;
@@ -38,12 +39,12 @@ export default function CenteredNavbar({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile Header */}
         <div className="flex md:hidden items-center justify-between h-16">
-          <a
+          <Link
             href="/"
             className="text-lg font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             {logo}
-          </a>
+          </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -58,12 +59,12 @@ export default function CenteredNavbar({
         <div className="hidden md:block py-6">
           {/* Logo Centered */}
           <div className="flex justify-center mb-6">
-            <a
+            <Link
               href="/"
               className="text-2xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               {logo}
-            </a>
+            </Link>
           </div>
 
           {/* Navigation Links Centered */}

@@ -39,7 +39,7 @@ export function PortfolioHero({ className = "" }: PortfolioHeroProps) {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear"
+            ease: "linear" as const
           }}
           className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400 to-pink-400 dark:from-purple-600 dark:to-pink-600 rounded-full blur-3xl opacity-20"
         />
@@ -51,7 +51,7 @@ export function PortfolioHero({ className = "" }: PortfolioHeroProps) {
           transition={{
             duration: 25,
             repeat: Infinity,
-            ease: "linear"
+            ease: "linear" as const
           }}
           className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-600 rounded-full blur-3xl opacity-20"
         />
@@ -112,7 +112,7 @@ export function PortfolioHero({ className = "" }: PortfolioHeroProps) {
               transition={{ delay: 0.7, duration: 0.8 }}
               className="flex flex-wrap gap-3"
             >
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <span
                   key={skill}
                   className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:scale-105 transition-transform cursor-default"

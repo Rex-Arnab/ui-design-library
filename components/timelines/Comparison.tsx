@@ -1,6 +1,6 @@
 "use client";
 
-import { Circle } from "lucide-react";
+
 
 interface ComparisonEvent {
   date: string;

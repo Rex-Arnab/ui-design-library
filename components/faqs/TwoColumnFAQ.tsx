@@ -120,7 +120,7 @@ export default function TwoColumnFAQ({
               </h3>
               <motion.div
                 animate={{ rotate: isOpen ? 180 : 0 }}
-                transition={{ duration: 0.2, ease: 'easeInOut' }}
+                transition={{ duration: 0.2, ease: 'easeInOut' as const }}
                 className="flex-shrink-0 mt-0.5"
               >
                 <ChevronDown className="w-4 h-4 text-gray-500 dark:text-gray-400" />
@@ -134,7 +134,7 @@ export default function TwoColumnFAQ({
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.25, ease: 'easeInOut' }}
+                  transition={{ duration: 0.25, ease: 'easeInOut' as const }}
                   style={{ overflow: 'hidden' }}
                 >
                   <div className="px-5 pb-4 pt-0">

@@ -3,9 +3,7 @@
 import * as React from "react";
 import { clsx } from "clsx";
 
-export interface CustomCardProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-const CustomCard = React.forwardRef<HTMLDivElement, CustomCardProps>(
+const CustomCard = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (
     <div
       ref={ref}
@@ -19,7 +17,7 @@ const CustomCard = React.forwardRef<HTMLDivElement, CustomCardProps>(
 );
 CustomCard.displayName = "CustomCard";
 
-const CustomCardHeader = React.forwardRef<HTMLDivElement, CustomCardProps>(
+const CustomCardHeader = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (
     <div
       ref={ref}
@@ -57,14 +55,14 @@ const CustomCardDescription = React.forwardRef<
 ));
 CustomCardDescription.displayName = "CustomCardDescription";
 
-const CustomCardContent = React.forwardRef<HTMLDivElement, CustomCardProps>(
+const CustomCardContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (
     <div ref={ref} className={clsx("p-6 pt-0", className)} {...props} />
   )
 );
 CustomCardContent.displayName = "CustomCardContent";
 
-const CustomCardFooter = React.forwardRef<HTMLDivElement, CustomCardProps>(
+const CustomCardFooter = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (
     <div
       ref={ref}

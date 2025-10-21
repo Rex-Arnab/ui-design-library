@@ -10,16 +10,13 @@ import {
   Smartphone,
   Moon,
   Eye,
-  Palette,
   Zap,
   Package,
-  Code2,
   Sparkles,
   Box,
   Target,
   TrendingUp,
   Check,
-  Star,
 } from "lucide-react";
 import { useRef, useEffect } from "react";
 import {
@@ -157,7 +154,7 @@ export default function Home() {
             transition={{
               duration: 20,
               repeat: Infinity,
-              ease: "linear",
+              ease: "linear" as const,
             }}
             className="absolute -top-20 -left-20 w-96 h-96 bg-purple-600 opacity-20"
             style={{ y }}
@@ -169,7 +166,7 @@ export default function Home() {
             transition={{
               duration: 15,
               repeat: Infinity,
-              ease: "linear",
+              ease: "linear" as const,
             }}
             className="absolute top-1/4 right-0 w-64 h-64 bg-cyan-500 opacity-20"
           />
@@ -180,7 +177,7 @@ export default function Home() {
             transition={{
               duration: 8,
               repeat: Infinity,
-              ease: "easeInOut",
+              ease: "easeInOut" as const,
             }}
             className="absolute bottom-20 left-1/4 w-80 h-80 bg-pink-500 opacity-20 rounded-full"
           />
@@ -191,7 +188,7 @@ export default function Home() {
             transition={{
               duration: 6,
               repeat: Infinity,
-              ease: "easeInOut",
+              ease: "easeInOut" as const,
             }}
             className="absolute top-1/3 left-1/3 w-32 h-32 bg-orange-500 opacity-30 rotate-45"
           />
@@ -275,7 +272,7 @@ export default function Home() {
             transition={{ delay: 0.9 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-12 max-w-4xl mx-auto"
           >
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div
                 key={stat.label}
                 className="bg-zinc-900 border-2 border-white p-4 shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)]"
@@ -300,7 +297,7 @@ export default function Home() {
           <span className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Scroll</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" as const }}
             className="w-0.5 h-12 bg-cyan-500"
           />
         </motion.div>
@@ -380,7 +377,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-zinc-400 max-w-3xl mx-auto font-bold"
             >
-              From hero sections to footers, authentication pages to pricing tables - we've got every component category covered.
+              From hero sections to footers, authentication pages to pricing tables - we&apos;ve got every component category covered.
             </motion.p>
           </div>
 

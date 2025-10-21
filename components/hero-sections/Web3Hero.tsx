@@ -43,7 +43,7 @@ export function Web3Hero({ className = "" }: Web3HeroProps) {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear"
+            ease: "linear" as const
           }}
           className="absolute -top-1/2 -left-1/4 w-full h-full bg-gradient-to-br from-purple-600 via-pink-500 to-orange-500 opacity-30 blur-3xl"
         />
@@ -55,7 +55,7 @@ export function Web3Hero({ className = "" }: Web3HeroProps) {
           transition={{
             duration: 25,
             repeat: Infinity,
-            ease: "linear"
+            ease: "linear" as const
           }}
           className="absolute -bottom-1/2 -right-1/4 w-full h-full bg-gradient-to-tl from-blue-600 via-cyan-500 to-teal-500 opacity-30 blur-3xl"
         />
@@ -166,7 +166,7 @@ export function Web3Hero({ className = "" }: Web3HeroProps) {
               transition={{
                 duration: 4,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: "easeInOut" as const
               }}
               className="relative bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-xl border border-purple-500/30 rounded-3xl p-8 overflow-hidden"
             >

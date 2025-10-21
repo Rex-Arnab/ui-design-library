@@ -26,7 +26,6 @@ import {
   FolderTree,
   Sparkles,
 } from "lucide-react";
-import { PageHeader } from "@/components/showcase/page-header";
 import { CustomButton } from "@/components/custom-ui/CustomButton";
 import {
   CustomCard,
@@ -358,7 +357,7 @@ export default function ShowcasePage() {
         variants={containerVariants}
       >
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {stats.map((stat, index) => {
+          {stats.map((stat) => {
             const Icon = stat.icon;
             return (
               <motion.div key={stat.label} variants={itemVariants}>
@@ -418,7 +417,7 @@ export default function ShowcasePage() {
 
           {/* Components Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {basicComponents.map((category, index) => {
+            {basicComponents.map((category) => {
               const Icon = category.icon;
               return (
                 <motion.div key={category.title} variants={itemVariants}>
@@ -491,7 +490,7 @@ export default function ShowcasePage() {
 
           {/* Patterns Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {patterns.map((pattern, index) => {
+            {patterns.map((pattern) => {
               const Icon = pattern.icon;
               return (
                 <motion.div key={pattern.title} variants={itemVariants}>

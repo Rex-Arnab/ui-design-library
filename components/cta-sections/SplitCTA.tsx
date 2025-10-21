@@ -38,7 +38,7 @@ export default function SplitCTA({ className = '' }: SplitCTAProps) {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            transition={{ duration: 0.6, ease: 'easeOut' as const }}
             className="flex flex-col justify-center"
           >
             {/* Eyebrow */}
@@ -111,7 +111,7 @@ export default function SplitCTA({ className = '' }: SplitCTAProps) {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+            transition={{ duration: 0.6, ease: 'easeOut' as const, delay: 0.2 }}
             className="relative flex items-center justify-center"
           >
             {/* Placeholder for illustration/image */}

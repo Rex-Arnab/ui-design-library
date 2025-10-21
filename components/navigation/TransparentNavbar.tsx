@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 interface NavLink {
   label: string;
@@ -57,7 +58,7 @@ export default function TransparentNavbar({
             transition={{ duration: 0.5 }}
             className="flex-shrink-0"
           >
-            <a
+            <Link
               href="/"
               className={`text-xl font-bold transition-colors ${
                 scrolled
@@ -66,7 +67,7 @@ export default function TransparentNavbar({
               }`}
             >
               {logo}
-            </a>
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}

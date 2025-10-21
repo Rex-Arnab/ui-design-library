@@ -57,7 +57,7 @@ export default function MinimalNewsletter({ className = '', onSubmit }: MinimalN
                 <CheckCircle className="w-12 h-12 text-green-500" />
               </motion.div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                You're subscribed!
+                You&apos;re subscribed!
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 Thanks for joining us.

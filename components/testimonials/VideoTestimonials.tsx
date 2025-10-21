@@ -71,7 +71,7 @@ const defaultTestimonials: Testimonial[] = [
     name: 'David Chang',
     role: 'CTO',
     company: 'SecureTech',
-    content: 'Security, performance, and reliability - this platform delivers on all fronts. It\'s become mission-critical for our infrastructure.',
+    content: 'Security, performance, and reliability - this platform delivers on all fronts. It&apos;s become mission-critical for our infrastructure.',
     rating: 5,
   },
 ];
@@ -140,7 +140,7 @@ const VideoTestimonials: React.FC<VideoTestimonialsProps> = ({
             Customer Video Testimonials
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Hear directly from our customers about how we've helped transform their business.
+            Hear directly from our customers about how we&apos;ve helped transform their business.
           </p>
         </div>
 

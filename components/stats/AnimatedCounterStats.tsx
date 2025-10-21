@@ -73,7 +73,7 @@ const defaultStats: Stat[] = [
 ];
 
 // Format number helper
-const formatNumber = (num: number): string => {
+const _formatNumber =(num: number): string => {
   if (num >= 1000000) return `${(num / 1000000).toFixed(1)}M`;
   if (num >= 1000) return `${(num / 1000).toFixed(1)}K`;
   return num.toString();
@@ -99,7 +99,7 @@ const AnimatedCounter: React.FC<{
   useEffect(() => {
     const controls = animate(counter, value, {
       duration: 2,
-      ease: 'easeOut',
+      ease: 'easeOut' as const,
     });
 
     return controls.stop;
@@ -145,7 +145,7 @@ const itemVariants = {
     scale: 1,
     transition: {
       duration: 0.5,
-      ease: 'easeOut',
+      ease: 'easeOut' as const,
     },
   },
 };

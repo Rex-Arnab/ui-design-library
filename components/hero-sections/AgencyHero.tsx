@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Award, Target, Users, Zap } from "lucide-react";
+import { ArrowUpRight, Award, Zap } from "lucide-react";
 
 interface AgencyHeroProps {
   className?: string;

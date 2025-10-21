@@ -180,7 +180,7 @@ export default function IconFAQ({ className = '', faqs = defaultFAQs }: IconFAQP
 
                 <motion.div
                   animate={{ rotate: isOpen ? 180 : 0 }}
-                  transition={{ duration: 0.2, ease: 'easeInOut' }}
+                  transition={{ duration: 0.2, ease: 'easeInOut' as const }}
                   className="flex-shrink-0 mt-0.5"
                 >
                   <ChevronDown className="w-5 h-5 text-gray-500 dark:text-gray-400" />
@@ -194,7 +194,7 @@ export default function IconFAQ({ className = '', faqs = defaultFAQs }: IconFAQP
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    transition={{ duration: 0.3, ease: 'easeInOut' as const }}
                     style={{ overflow: 'hidden' }}
                   >
                     <div className="px-5 pb-5 pt-0 pl-[4.5rem]">

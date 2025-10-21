@@ -134,7 +134,7 @@ const HeroTeam: React.FC<HeroTeamProps> = ({
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-12"
           >
-            We're a diverse team of designers, engineers, and problem-solvers from around the world, united by our mission to build products that make a difference.
+            We&apos;re a diverse team of designers, engineers, and problem-solvers from around the world, united by our mission to build products that make a difference.
           </motion.p>
 
           {/* Stats */}
@@ -196,7 +196,7 @@ const HeroTeam: React.FC<HeroTeamProps> = ({
             <div className="text-center">
               <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Impact</h4>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Building products that genuinely improve people's lives
+                Building products that genuinely improve people&apos;s lives
               </p>
             </div>
           </div>

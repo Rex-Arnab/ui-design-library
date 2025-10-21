@@ -25,7 +25,7 @@ export default function SocialProofCTA({ className = '' }: SocialProofCTAProps) 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeOut' as const }}
           className="text-center"
         >
           {/* Social Proof Badge */}
@@ -111,9 +111,9 @@ export default function SocialProofCTA({ className = '' }: SocialProofCTAProps) 
             <Quote className="absolute left-4 top-4 h-8 w-8 text-gray-200 dark:text-gray-800" />
 
             <blockquote className="relative text-base italic text-gray-700 dark:text-gray-300 sm:text-lg">
-              "This platform completely transformed how we work. We shipped our
+              &ldquo;This platform completely transformed how we work. We shipped our
               product 3 months ahead of schedule and our team productivity
-              increased by 10x. I can't imagine going back to the old way."
+              increased by 10x. I can&apos;t imagine going back to the old way.&rdquo;
             </blockquote>
 
             <div className="mt-6 flex items-center justify-center gap-3">

@@ -77,7 +77,7 @@ export function Animated({ events: customEvents, className = "" }: AnimatedProps
               className="w-full bg-blue-600"
               initial={{ height: 0 }}
               animate={isLineInView ? { height: "100%" } : { height: 0 }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
+              transition={{ duration: 1.5, ease: "easeInOut" as const }}
             />
           </div>
 

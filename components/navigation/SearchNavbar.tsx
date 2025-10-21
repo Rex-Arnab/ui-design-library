@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Search, ShoppingCart, User, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
 
 interface NavLink {
   label: string;
@@ -84,12 +85,12 @@ export default function SearchNavbar({
         <div className="flex items-center justify-between h-16 gap-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a
+            <Link
               href="/"
               className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               {logo}
-            </a>
+            </Link>
           </div>
 
           {/* Search Bar - Desktop */}

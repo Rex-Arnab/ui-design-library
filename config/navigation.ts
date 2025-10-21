@@ -14,7 +14,7 @@ import {
   DollarSign,
   Boxes,
   Clock,
-  MessageSquare,
+  
   Layers,
   Target,
   HelpCircle,

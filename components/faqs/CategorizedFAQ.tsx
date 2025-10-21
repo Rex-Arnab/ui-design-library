@@ -209,7 +209,7 @@ export default function CategorizedFAQ({
                         </h4>
                         <motion.div
                           animate={{ rotate: isOpen ? 180 : 0 }}
-                          transition={{ duration: 0.2, ease: 'easeInOut' }}
+                          transition={{ duration: 0.2, ease: 'easeInOut' as const }}
                           className="flex-shrink-0 mt-0.5"
                         >
                           <ChevronDown className="w-4 h-4 text-gray-500 dark:text-gray-400" />
@@ -223,7 +223,7 @@ export default function CategorizedFAQ({
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: 'auto', opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.25, ease: 'easeInOut' }}
+                            transition={{ duration: 0.25, ease: 'easeInOut' as const }}
                             style={{ overflow: 'hidden' }}
                           >
                             <div className="px-5 pb-4 pt-0">
@@ -247,7 +247,7 @@ export default function CategorizedFAQ({
 
       <div className="mt-12 text-center bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-          Didn't find what you were looking for?
+          Didn&apos;t find what you were looking for?
         </h3>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-5">
           Our support team is ready to help you

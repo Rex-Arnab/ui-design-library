@@ -107,7 +107,7 @@ export default function PopupNewsletter({
                         <CheckCircle className="w-20 h-20 text-green-500 mx-auto mb-4" />
                       </motion.div>
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                        You're in!
+                        You&apos;re in!
                       </h3>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
                         Check your email for your exclusive offer.
@@ -187,7 +187,7 @@ export default function PopupNewsletter({
                         onClick={handleDismiss}
                         className="w-full mt-4 text-sm text-gray-500 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
                       >
-                        No thanks, I'll pay full price
+                        No thanks, I&apos;ll pay full price
                       </button>
 
                       {/* Trust message */}

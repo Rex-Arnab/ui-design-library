@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Shield, Lock, TrendingUp, CreditCard, CheckCircle, ArrowRight, Smartphone } from "lucide-react";
+import { Shield, Lock, TrendingUp, CreditCard, CheckCircle, ArrowRight } from "lucide-react";
 
 interface FintechHeroProps {
   className?: string;

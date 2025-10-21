@@ -120,7 +120,7 @@ export default function PlusMinusFAQ({
                 <motion.div
                   initial={false}
                   animate={{ rotate: isOpen ? 90 : 0 }}
-                  transition={{ duration: 0.2, ease: 'easeInOut' }}
+                  transition={{ duration: 0.2, ease: 'easeInOut' as const }}
                   className="flex-shrink-0 mt-0.5"
                 >
                   {isOpen ? (
@@ -138,7 +138,7 @@ export default function PlusMinusFAQ({
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    transition={{ duration: 0.3, ease: 'easeInOut' as const }}
                     style={{ overflow: 'hidden' }}
                   >
                     <div className="px-6 pb-5 pt-0">

@@ -73,7 +73,7 @@ export default function SocialProofNewsletter({ className = '', onSubmit }: Soci
                   Welcome to the community!
                 </h3>
                 <p className="text-base text-gray-600 dark:text-gray-400 mb-2">
-                  You've successfully joined 12,000+ subscribers.
+                  You&apos;ve successfully joined 12,000+ subscribers.
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-500">
                   Your first newsletter is on its way!

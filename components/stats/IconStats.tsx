@@ -134,7 +134,7 @@ const itemVariants = {
     scale: 1,
     transition: {
       duration: 0.5,
-      ease: 'easeOut',
+      ease: 'easeOut' as const,
     },
   },
 };
@@ -181,7 +181,7 @@ const IconStats: React.FC<IconStatsProps> = ({
                 <div className="flex justify-center mb-6">
                   <motion.div
                     whileHover={{ rotate: 360 }}
-                    transition={{ duration: 0.6, ease: 'easeInOut' }}
+                    transition={{ duration: 0.6, ease: 'easeInOut' as const }}
                     className={`w-20 h-20 rounded-full flex items-center justify-center ${colors.bg}`}
                   >
                     <Icon className="w-10 h-10 text-white" />

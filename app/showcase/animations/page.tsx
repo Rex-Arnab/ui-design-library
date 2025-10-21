@@ -539,7 +539,7 @@ const itemVariants = {
   transition={{
     duration: 2,
     repeat: Infinity,
-    ease: "linear"
+    ease: "linear" as const
   }}
 >
   <Sparkles />
@@ -551,7 +551,7 @@ const itemVariants = {
                 transition={{
                   duration: 2,
                   repeat: Infinity,
-                  ease: "linear",
+                  ease: "linear" as const,
                 }}
               >
                 <Sparkles className="h-12 w-12 text-primary" />
@@ -567,7 +567,7 @@ const itemVariants = {
   transition={{
     duration: 2,
     repeat: Infinity,
-    ease: "easeInOut"
+    ease: "easeInOut" as const
   }}
 >
   Content
@@ -579,7 +579,7 @@ const itemVariants = {
                 transition={{
                   duration: 2,
                   repeat: Infinity,
-                  ease: "easeInOut",
+                  ease: "easeInOut" as const,
                 }}
               >
                 <Badge className="px-4 py-2 text-sm">

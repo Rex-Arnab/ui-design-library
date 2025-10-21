@@ -21,6 +21,7 @@ import {
   GitBranch,
   Package,
   MessageSquare,
+  type LucideIcon,
 } from "lucide-react";
 
 // Design Philosophy Principles
@@ -373,7 +374,7 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -385,13 +386,13 @@ const numberVariants = {
     scale: 1,
     transition: {
       duration: 0.5,
-      ease: [0.34, 1.56, 0.64, 1],
+      ease: [0.34, 1.56, 0.64, 1] as const,
     },
   },
 };
 
 // Principle Card Component
-function PrincipleCard({ principle, index }: { principle: any; index: number }) {
+function PrincipleCard({ principle, index }: { principle: { number: string; title: string; description: string; icon: LucideIcon; color: string }; index: number }) {
   const Icon = principle.icon;
   const isEven = index % 2 === 0;
 
@@ -446,7 +447,7 @@ function SectionHeader({
   subtitle,
   color,
 }: {
-  icon: any;
+  icon: LucideIcon;
   title: string;
   subtitle: string;
   color: string;
@@ -540,7 +541,7 @@ function ContrastSection() {
           <div className="flex items-center gap-4">
             <XCircle className="w-12 h-12 text-pink-500" />
             <h3 className="text-3xl md:text-4xl font-black text-white dark:text-black tracking-tight">
-              We Don't Believe
+              We Don&apos;t Believe
             </h3>
           </div>
           <ul className="space-y-4 text-lg text-gray-300 dark:text-gray-700">
@@ -583,7 +584,7 @@ function PullQuote({ quote, author }: { quote: string; author: string }) {
     >
       <div className="border-l-8 border-purple-600 pl-8 md:pl-12">
         <p className="text-3xl md:text-5xl font-black text-gray-900 dark:text-white leading-tight mb-6">
-          "{quote}"
+          &ldquo;{quote}&rdquo;
         </p>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
           — {author}
@@ -646,7 +647,7 @@ export default function PhilosophyPage() {
         {/* Subheading */}
         <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium">
           How we think about design, business, and building products that matter.
-          These aren't just words on a page—they're decisions we make every day.
+          These aren&apos;t just words on a page—they&apos;re decisions we make every day.
         </p>
 
         {/* Decorative element */}

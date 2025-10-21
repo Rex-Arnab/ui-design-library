@@ -145,7 +145,7 @@ export function MultiColumnHero({ className = "" }: MultiColumnHeroProps) {
               {/* Floating Cards */}
               <motion.div
                 animate={{ y: [0, -20, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const }}
                 className="absolute -top-8 -left-8 z-20 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-2xl border border-gray-200 dark:border-slate-700"
               >
                 <div className="flex items-center gap-3 mb-3">
@@ -164,7 +164,7 @@ export function MultiColumnHero({ className = "" }: MultiColumnHeroProps) {
 
               <motion.div
                 animate={{ y: [0, 20, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const, delay: 0.5 }}
                 className="absolute -bottom-8 -right-8 z-20 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-2xl border border-gray-200 dark:border-slate-700"
               >
                 <div className="flex items-center gap-3 mb-3">

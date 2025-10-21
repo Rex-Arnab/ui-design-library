@@ -15,6 +15,7 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import Link from 'next/link';
 
 interface NavLink {
   label: string;
@@ -93,12 +94,12 @@ export default function SidebarNav({
         {/* Logo & Collapse Button */}
         <div className="flex items-center justify-between h-16 px-4 border-b border-gray-200 dark:border-gray-800">
           {!collapsed && (
-            <a
+            <Link
               href="/"
               className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               {logo}
-            </a>
+            </Link>
           )}
           <button
             onClick={() => setCollapsed(!collapsed)}
@@ -182,7 +183,7 @@ export default function SidebarNav({
                           transition={{ duration: 0.2 }}
                           className="ml-8 mt-1 space-y-1 overflow-hidden"
                         >
-                          {link.children.map((child) => (
+                          {link.children?.map((child) => (
                             <li key={child.href}>
                               <a
                                 href={child.href}

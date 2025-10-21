@@ -18,7 +18,9 @@ export interface CustomSheetTriggerProps {
 }
 
 export interface CustomSheetContentProps
-  extends React.HTMLAttributes<HTMLDivElement> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>,
+    'onDrag' | 'onDragStart' | 'onDragEnd' |
+    'onAnimationStart' | 'onAnimationEnd' | 'onAnimationIteration'> {
   side?: "left" | "right" | "top" | "bottom";
 }
 
@@ -54,7 +56,7 @@ const CustomSheetTrigger = React.forwardRef<
   };
 
   if (asChild && React.isValidElement(children)) {
-    return React.cloneElement(children as React.ReactElement<any>, {
+    return React.cloneElement(children as React.ReactElement<React.HTMLAttributes<HTMLElement>>, {
       onClick: handleClick,
     });
   }
@@ -142,7 +144,12 @@ const CustomSheetContent = React.forwardRef<
               positionStyles[side],
               className
             )}
-            {...props}
+            style={props.style}
+            id={props.id}
+            role={props.role}
+            aria-label={props['aria-label']}
+            aria-labelledby={props['aria-labelledby']}
+            aria-describedby={props['aria-describedby']}
           >
             {/* Close Button */}
             <button

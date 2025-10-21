@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Linkedin, Github, Instagram, Youtube, MessageCircle, Mail } from 'lucide-react';
+import { Twitter, Linkedin, Github, Instagram, Youtube, MessageCircle, Mail } from 'lucide-react';
 
 interface SocialFooterProps {
   className?: string;
@@ -80,7 +80,7 @@ const SocialFooter: React.FC<SocialFooterProps> = ({ className = '' }) => {
             </span>
           </div>
           <p className="text-xs text-gray-600 dark:text-gray-400 max-w-md mx-auto">
-            Connect with us on your favorite platform. We'd love to hear from you!
+            Connect with us on your favorite platform. We&apos;d love to hear from you!
           </p>
         </motion.div>
 

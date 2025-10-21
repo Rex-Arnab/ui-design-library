@@ -120,7 +120,7 @@ export default function AccordionFAQ({
                 </h3>
                 <motion.div
                   animate={{ rotate: isOpen ? 180 : 0 }}
-                  transition={{ duration: 0.3, ease: 'easeInOut' }}
+                  transition={{ duration: 0.3, ease: 'easeInOut' as const }}
                   className="flex-shrink-0"
                 >
                   <ChevronDown className="w-5 h-5 text-gray-500 dark:text-gray-400" />
@@ -134,7 +134,7 @@ export default function AccordionFAQ({
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    transition={{ duration: 0.3, ease: 'easeInOut' as const }}
                     style={{ overflow: 'hidden' }}
                   >
                     <div className="px-6 pb-5 bg-white dark:bg-gray-900">

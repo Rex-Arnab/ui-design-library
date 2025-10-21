@@ -69,7 +69,7 @@ export default function SideImageNewsletter({ className = '', onSubmit }: SideIm
                       <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
                     </motion.div>
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                      You're all set, {name.split(' ')[0]}!
+                      You&apos;re all set, {name.split(' ')[0]}!
                     </h3>
                     <p className="text-base text-gray-600 dark:text-gray-400 mb-2">
                       Thanks for joining our community.
@@ -206,7 +206,7 @@ export default function SideImageNewsletter({ className = '', onSubmit }: SideIm
                     {/* Floating elements */}
                     <motion.div
                       animate={{ y: [0, -10, 0] }}
-                      transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                      transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' as const }}
                       className="absolute top-0 right-0 w-16 h-16 bg-blue-100 dark:bg-blue-800 rounded-lg flex items-center justify-center shadow-lg"
                     >
                       <CheckCircle className="w-8 h-8 text-blue-600 dark:text-blue-400" />
@@ -214,7 +214,7 @@ export default function SideImageNewsletter({ className = '', onSubmit }: SideIm
 
                     <motion.div
                       animate={{ y: [0, 10, 0] }}
-                      transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+                      transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' as const, delay: 0.5 }}
                       className="absolute bottom-0 left-0 w-16 h-16 bg-purple-100 dark:bg-purple-800 rounded-lg flex items-center justify-center shadow-lg"
                     >
                       <Mail className="w-8 h-8 text-purple-600 dark:text-purple-400" />

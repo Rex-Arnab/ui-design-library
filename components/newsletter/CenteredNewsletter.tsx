@@ -66,7 +66,7 @@ export default function CenteredNewsletter({ className = '', onSubmit }: Centere
                   Welcome aboard!
                 </h3>
                 <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
-                  You're now subscribed to our newsletter.
+                  You&apos;re now subscribed to our newsletter.
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-500">
                   Watch your inbox for great content coming your way!

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { User, Mail, Lock, BookOpen, ChevronRight, ChevronLeft, Check } from "lucide-react";
+import { User, Mail, Lock, ChevronRight, ChevronLeft, Check } from "lucide-react";
 import { useState } from "react";
 
 interface MultiStepRegisterProps {

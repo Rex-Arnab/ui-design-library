@@ -247,7 +247,7 @@ const MarqueeTestimonials: React.FC<MarqueeTestimonialsProps> = ({
                   repeat: Infinity,
                   repeatType: 'loop',
                   duration: 30,
-                  ease: 'linear',
+                  ease: 'linear' as const,
                 },
               }}
               className="flex gap-4 flex-shrink-0"
@@ -269,7 +269,7 @@ const MarqueeTestimonials: React.FC<MarqueeTestimonialsProps> = ({
                   repeat: Infinity,
                   repeatType: 'loop',
                   duration: 30,
-                  ease: 'linear',
+                  ease: 'linear' as const,
                 },
               }}
               className="flex gap-4 flex-shrink-0"
@@ -296,7 +296,7 @@ const MarqueeTestimonials: React.FC<MarqueeTestimonialsProps> = ({
                   repeat: Infinity,
                   repeatType: 'loop',
                   duration: 30,
-                  ease: 'linear',
+                  ease: 'linear' as const,
                 },
               }}
               className="flex gap-4 flex-shrink-0"
@@ -318,7 +318,7 @@ const MarqueeTestimonials: React.FC<MarqueeTestimonialsProps> = ({
                   repeat: Infinity,
                   repeatType: 'loop',
                   duration: 30,
-                  ease: 'linear',
+                  ease: 'linear' as const,
                 },
               }}
               className="flex gap-4 flex-shrink-0"

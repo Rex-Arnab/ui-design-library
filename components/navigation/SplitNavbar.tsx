@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Github, Twitter, Linkedin } from 'lucide-react';
+import Link from 'next/link';
 
 interface NavLink {
   label: string;
@@ -44,12 +45,12 @@ export default function SplitNavbar({
         <div className="flex items-center justify-between h-16">
           {/* Logo - Far Left */}
           <div className="flex-shrink-0">
-            <a
+            <Link
               href="/"
               className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               {logo}
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation - Far Right */}

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, Zap, Shield, TrendingUp, Users, BookOpen, Code } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import Link from 'next/link';
 
 interface MegaMenuItem {
   label: string;
@@ -77,12 +78,12 @@ export default function MegaMenuNavbar({
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a
+            <Link
               href="/"
               className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               {logo}
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -200,7 +201,7 @@ export default function MegaMenuNavbar({
             className="lg:hidden border-t border-gray-200 dark:border-gray-800 overflow-hidden"
           >
             <div className="px-4 py-4 space-y-2 bg-white dark:bg-gray-900 max-h-[80vh] overflow-y-auto">
-              {links.map((link, index) => (
+              {links.map((link) => (
                 <div key={link.href}>
                   <a
                     href={link.href}

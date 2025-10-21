@@ -312,7 +312,7 @@ export default function App() {
               {/* Floating Feature Card */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as const }}
                 className="absolute -bottom-6 -right-6 bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-2xl backdrop-blur-sm"
               >
                 <div className="flex items-center gap-3 mb-3">

@@ -17,7 +17,7 @@ export default function CardCTA({ className = '' }: CardCTAProps) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeOut' as const }}
           className="relative overflow-hidden rounded-2xl border-2 border-gray-200 bg-white p-8 shadow-2xl dark:border-gray-800 dark:bg-gray-900 sm:p-12 lg:p-16"
         >
           {/* Background decorative elements */}

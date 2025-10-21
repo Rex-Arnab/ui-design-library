@@ -16,7 +16,7 @@ export default function BannerCTA({ className = '' }: BannerCTAProps) {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
+        transition={{ duration: 0.5, ease: 'easeOut' as const }}
         className="mx-auto max-w-7xl px-6 lg:px-8"
       >
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">

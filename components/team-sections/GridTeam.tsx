@@ -160,7 +160,7 @@ const GridTeam: React.FC<GridTeamProps> = ({
             Meet Our Team
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            We're a diverse team of designers, engineers, and problem solvers united by our mission to build exceptional products.
+            We&apos;re a diverse team of designers, engineers, and problem solvers united by our mission to build exceptional products.
           </p>
         </div>
 
